@@ -52,7 +52,7 @@ export default class ReadStoryScreen extends React.Component{
         <ScrollView>
           {this.state.book.map((read, index) => {
             return(
-              <View key={index} style={{borderBottomWidth: 2, marginTop: 100}}>
+              <View key={index} style={{borderBottomWidth: 2, marginTop: 20, marginBottom: 20}}>
                 <Text>{"Story Name: " + read.storyName}</Text>
                 <Text>{"Story Author: " + read.storyAuthor}</Text>
                 <Text>{"Pages: " + read.pages}</Text>
@@ -75,23 +75,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 40,
     width: 'auto',
-    borderWidth: 0.5,
+    borderWidth: 1,
     alignItems: 'center',
     padding: 10,
   },
   bar: {
     borderWidth: 2,
     height: 30,
-    width: 300,
+    width: 280,
     paddingLeft: 10,
     borderRadius: 30,
   },
   searchButton: {
     borderWidth: 1,
     height: 30,
-    width: 50,
+    width: 80,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'green'
+    borderRadius: 30
   }
 });
